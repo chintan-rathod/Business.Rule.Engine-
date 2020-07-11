@@ -27,7 +27,8 @@ namespace ProblemStmt_2Uunit_test
         [TestMethod]
         public void TestChoice2()
         {
-            var choice = 8;
+            Random _random = new Random();
+            int choice = _random.Next(8,100);
             bool result = false;
             RuleEngineFactory factory = new RuleEngineFactory();
             try
