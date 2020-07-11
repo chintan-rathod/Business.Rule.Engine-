@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29326.143
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problem-2", "MearskSolution\Problem-2.csproj", "{7ECB01E5-903C-48B0-829C-A6DC43DA770B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problem-2", "problem-stmt-2\Problem-2.csproj", "{7ECB01E5-903C-48B0-829C-A6DC43DA770B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business.Rule.Engine", "Business.Rule.Engine\Business.Rule.Engine.csproj", "{2BD349CA-E9CC-4EC0-913F-C950FE905FCD}"
 EndProject
