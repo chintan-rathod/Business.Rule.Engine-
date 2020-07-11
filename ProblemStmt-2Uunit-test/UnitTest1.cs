@@ -15,32 +15,31 @@ namespace ProblemStmt_2Uunit_test
         [TestMethod]
         public void TestChoice1()
         {
-            var choice = 1;
-
+           
+            Random _random = new Random();
+            int choice = _random.Next(1, 7);
             RuleEngineFactory factory = new RuleEngineFactory();
             var result = factory.ExecuteRule(choice);
             Assert.AreEqual(result, true);
         }
 
-        [TestMethod]
-        public void TestChoice8()
-        {
-            var choice = 8;
-
-            RuleEngineFactory factory = new RuleEngineFactory();
-            var result = factory.ExecuteRule(choice);
-            Assert.AreEqual(result, false);
-        }
 
         [TestMethod]
-        [ExpectedException(typeof(Exception),
-    "Invalid Choice")]
-        public void NullUserIdInConstructor()
+        public void TestChoice2()
         {
             var choice = 8;
-
+            bool result = false;
             RuleEngineFactory factory = new RuleEngineFactory();
-            var result = factory.ExecuteRule(choice);
+            try
+            {
+                  result = factory.ExecuteRule(choice);
+            }
+            catch (Exception ex)
+            {
+                Assert.AreEqual(result, false);
+            }
         }
+
+
     }
 }
